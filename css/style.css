@@ -1,0 +1,67 @@
+#tools-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+#tools-container .tool-item{
+    border: 1px solid #ccc;
+    padding: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.ai-tool-image img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.features-list{
+    color: #585858;
+    list-style-position: inside;
+}
+.tool-item-top{
+    padding-bottom: 9px;
+    border-bottom: 1px solid #ccc;
+    min-height: 390px;
+}
+.tool-item-bottom{
+    padding-top: 25px;
+}
+.published-in{
+    color: #585858;
+}
+.tool-button{
+    background: #eb575723;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.tool-button i{
+    font-size: 25px;
+    color: #eb5757;
+    cursor: pointer;
+}
+
+/* Mobile responsive */
+
+@media(max-width:1000px){
+    #tools-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+}
+
+@media(max-width:768px){
+    #tools-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+    #tools-container .tool-item {
+        padding: 15px;
+      }
+    .ai-universe-hub{
+        padding: 0 15px!important;
+    }
+}
