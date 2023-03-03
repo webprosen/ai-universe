@@ -1,0 +1,60 @@
+@media(min-width:1200px){
+    .modal-body{
+        padding: 50px;
+        padding-top: 18px;
+    }
+}
+
+@media(max-width:1000px){
+    #tools-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+    .pro-ai-modal{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:768px){
+    #tools-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+    #tools-container .tool-item {
+        padding: 15px;
+      }
+    .ai-universe-hub{
+        padding: 0 15px!important;
+    }
+}
+
+@media(max-width:575px){
+    .red-cross-btn{
+        position: absolute;
+        top: 12px;
+        right: 15px;
+    }
+    .modal-header{
+        padding: 25px!important;
+    }
+    .red-cross-btn i{
+        font-size: 35px;
+    }
+}
+
+@media(max-width:550px){
+    #plans{
+        grid-template-columns: 1fr;
+    }
+    .all-list{
+        grid-gap: 25px;
+    }
+}
+
+@media(max-width:450px){
+    .all-list{
+        grid-template-columns: 1fr;
+    }
+}

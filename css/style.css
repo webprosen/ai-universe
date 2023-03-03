@@ -30,38 +30,83 @@
 .published-in{
     color: #585858;
 }
-.tool-button{
+#tool-button{
     background: #eb575723;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-}
-.tool-button i{
-    font-size: 25px;
-    color: #eb5757;
     cursor: pointer;
 }
-
-/* Mobile responsive */
-
-@media(max-width:1000px){
-    #tools-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 25px;
-    }
+#tool-button i{
+    font-size: 25px;
+    color: #eb5757;
 }
 
-@media(max-width:768px){
-    #tools-container{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 25px;
-    }
-    #tools-container .tool-item {
-        padding: 15px;
-      }
-    .ai-universe-hub{
-        padding: 0 15px!important;
-    }
+/* Modal css */
+.modal-header{
+    border: initial!important;
+}
+.pro-ai-modal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:30px;
+}
+.modal-content-left{
+    border: 1px solid #eb5757;
+    border-radius: 10px;
+    padding: 25px;
+    background: #eb57571a;
+}
+
+.modal-content-right{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    min-height: 250px;
+    padding: 25px;
+}
+#modalContentRight img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#accuracy-badge{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 10px;
+}
+#plans{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:15px;
+    text-align: center;
+}
+.plan{
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 15px;
+    font-size: 18px;
+}
+.all-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+.all-list ul{
+    color: #585858;
+    padding-left: 25px;
+}
+.btn-close{
+    width: 3em;
+    height: 3em;
+}
+.red-cross-btn{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+}
+.red-cross-btn i{
+    font-size: 45px;
+    color: #eb5757;
+    cursor: pointer;
 }
